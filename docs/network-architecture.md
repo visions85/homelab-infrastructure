@@ -24,7 +24,7 @@ The homelab infrastructure implements a multi-tier security architecture with de
   - Security headers (HSTS, CSP, X-Frame-Options, etc.)
   - Cloudflare IP whitelisting
   - Request filtering
-  - Multi-domain routing (lunarprops.com, dirtydata.io, lleesl.com)
+  - Multi-domain routing
 
 ### Layer 2: Service Mesh (Internal)
 
