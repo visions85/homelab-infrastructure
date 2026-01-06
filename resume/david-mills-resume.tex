@@ -1,0 +1,166 @@
+% David Mills - DevOps/Infrastructure Engineer Resume
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% ----------- HEADING -----------
+\begin{center}
+    \textbf{\Huge \scshape David Mills} \\ \vspace{4pt}
+    \small
+    \faIcon{linkedin} \href{https://linkedin.com/in/davidsmillsjr}{linkedin.com/in/davidsmillsjr} $|$
+    \faIcon{github} \href{https://github.com/visions85}{github.com/visions85} $|$
+    \faIcon{link} \href{https://github.com/visions85/homelab-infrastructure}{Portfolio: Homelab Infrastructure}
+\end{center}
+
+% ----------- SUMMARY -----------
+\section{Professional Summary}
+\small{DevOps and Infrastructure Engineer with expertise in containerization, automation, and large-scale system architecture. Proven ability to design and maintain production-grade infrastructure with 56+ services across multi-server environments. Strong focus on security, observability, and infrastructure as code practices.}
+
+% ----------- TECHNICAL SKILLS -----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Containerization \& Orchestration:} Docker, Docker Compose, Kubernetes concepts \\
+     \textbf{Infrastructure \& Automation:} Infrastructure as Code, Bash scripting, Git version control, CI/CD \\
+     \textbf{Networking:} Nginx, Traefik, BIND9, DNS-over-TLS, VPN (Tailscale), reverse proxy architecture \\
+     \textbf{Security:} CrowdSec IDS/IPS, SSL/TLS, network segmentation, SSO/OIDC (Authentik), security hardening \\
+     \textbf{Monitoring \& Observability:} Prometheus, Grafana, InfluxDB, Jaeger, centralized logging (syslog-ng) \\
+     \textbf{Databases:} PostgreSQL, MariaDB, Redis, InfluxDB \\
+     \textbf{Cloud \& DNS:} Cloudflare (DNS, CDN, DDoS protection), Let's Encrypt \\
+     \textbf{Operating Systems:} Linux (Unraid, SuSE, Red Hat, Arch), Windows \\
+     \textbf{Storage:} ZFS, enterprise storage systems (236TB managed)
+    }}
+ \end{itemize}
+
+% ----------- PROJECTS -----------
+\section{Projects \& Portfolio}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+        {\textbf{Production Homelab Infrastructure} $|$ \emph{Docker, Traefik, Prometheus, PostgreSQL}}{2020 -- Present}
+        \resumeItemListStart
+          \resumeItem{Architected and maintain production-grade multi-server infrastructure with 56+ containerized services across 11 categories, serving 3 domains with automated SSL/TLS management}
+          \resumeItem{Designed multi-tier security architecture with CrowdSec IDS/IPS, nginx reverse proxy with security hardening, and network segmentation across 8+ isolated Docker networks}
+          \resumeItem{Implemented comprehensive observability stack (Prometheus, Grafana, InfluxDB, Jaeger) with centralized logging using syslog-ng for real-time monitoring and alerting}
+          \resumeItem{Built high-availability DNS infrastructure with BIND9 primary/secondary servers and DNS-over-TLS (Stubby) for enhanced privacy and redundancy}
+          \resumeItem{Deployed SSO/OIDC infrastructure using Authentik with PostgreSQL 16 and Redis, integrating authentication across 20+ services}
+          \resumeItem{Managed 236TB storage infrastructure (97\% utilized) with 10TB ZFS cache pool, implementing automated backup strategy using Duplicacy}
+          \resumeItem{Automated infrastructure management using modular Docker Compose architecture with environment-driven configuration and Git version control}
+          \resumeItem{Documented entire infrastructure architecture with comprehensive technical documentation, network diagrams, and service inventory}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading
+        {\textbf{Media Automation Platform} $|$ \emph{Docker, Nginx, PostgreSQL, Redis}}{2021 -- Present}
+        \resumeItemListStart
+          \resumeItem{Built automated media management platform integrating Sonarr, Radarr, Lidarr, Readarr, Bazarr, and Overseerr with Plex/Jellyfin for end-to-end content delivery}
+          \resumeItem{Configured hardware transcoding for Plex and Jellyfin, optimizing performance and resource utilization}
+          \resumeItem{Implemented Immich photo management platform with machine learning capabilities for facial recognition and content organization}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Collaboration \& Development Stack} $|$ \emph{Nextcloud, Gitea, n8n, PostgreSQL}}{2020 -- Present}
+        \resumeItemListStart
+          \resumeItem{Deployed Nextcloud with MariaDB 11.4 and Redis for file synchronization, calendaring, and team collaboration}
+          \resumeItem{Self-hosted Git infrastructure using Gitea for private repository management and version control}
+          \resumeItem{Implemented n8n workflow automation platform for business process automation and service integration}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% ----------- EXPERIENCE -----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Infrastructure \& DevOps Engineer (Self-Directed)}{2020 -- Present}
+      {Personal Infrastructure Project}{Remote}
+      \resumeItemListStart
+        \resumeItem{Design, implement, and maintain enterprise-grade infrastructure demonstrating production DevOps practices}
+        \resumeItem{Research and evaluate new technologies, implementing best practices for security, monitoring, and automation}
+        \resumeItem{Troubleshoot complex multi-service issues across networking, storage, and application layers}
+        \resumeItem{Create and maintain comprehensive technical documentation for knowledge sharing and disaster recovery}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+% ----------- CERTIFICATIONS & LEARNING -----------
+\section{Continuous Learning}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Self-Study \& Hands-On Experience}}{Ongoing}
+        \resumeItemListStart
+          \resumeItem{Active participation in DevOps, Docker, and Linux communities for knowledge sharing and problem-solving}
+          \resumeItem{Regular implementation of new technologies and tools to expand technical skillset}
+          \resumeItem{Documentation and sharing of infrastructure designs through public GitHub repository}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% ----------- KEY COMPETENCIES -----------
+\section{Key Competencies}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Infrastructure Design $|$ Security Architecture $|$ Container Orchestration $|$ Network Engineering $|$
+     Performance Optimization $|$ Troubleshooting $|$ Documentation $|$ Automation $|$ Monitoring \& Alerting
+    }}
+ \end{itemize}
+
+\end{document}
