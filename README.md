@@ -42,6 +42,7 @@ Docker Services (56+ containers)
 
 ### Networking & Security
 - **Reverse Proxy**: Traefik v3.0 (service mesh) + Nginx (edge security)
+- **Intrusion Detection**: CrowdSec with nginx bouncer
 - **DNS**: BIND9 primary (192.168.1.21) + secondary (192.168.1.22)
 - **DNS-over-TLS**: Stubby forwarding to Cloudflare
 - **SSL/TLS**: Let's Encrypt with Cloudflare DNS challenge
@@ -160,6 +161,7 @@ See `/scripts` for management automation examples.
 
 - [Network Architecture](docs/network-architecture.md)
 - [Service Inventory](docs/service-inventory.md)
+- [CrowdSec Security](docs/security-crowdsec.md)
 - [Monitoring Setup](docs/monitoring-setup.md)
 - [Security Hardening](docs/security-hardening.md)
 
