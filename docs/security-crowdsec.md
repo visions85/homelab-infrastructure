@@ -7,7 +7,6 @@ nicesrv runs CrowdSec as the primary security layer for the homelab infrastructu
 - **Version**: v1.7.4 (Codename: alphaga)
 - **Platform**: Debian/Linux
 - **Service Type**: systemd service
-- **Status**: Currently inactive (needs restart)
 - **Config Location**: `/etc/crowdsec/`
 
 ## Architecture
