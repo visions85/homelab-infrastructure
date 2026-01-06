@@ -162,8 +162,6 @@ See `/scripts` for management automation examples.
 - [Network Architecture](docs/network-architecture.md)
 - [Service Inventory](docs/service-inventory.md)
 - [CrowdSec Security](docs/security-crowdsec.md)
-- [Monitoring Setup](docs/monitoring-setup.md)
-- [Security Hardening](docs/security-hardening.md)
 
 ## 🎯 Design Principles
 
