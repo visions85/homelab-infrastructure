@@ -172,13 +172,6 @@ sudo cscli console status
 ## Threat Intelligence
 CrowdSec participates in a collaborative threat intelligence network. Local decisions are shared (anonymously) to improve the global blocklist, and the local instance benefits from global threat data.
 
-## Next Steps
-1. **Start the service**: CrowdSec is currently inactive
-2. **Enroll in Console**: For web-based monitoring and alerts
-3. **Review decisions**: Check if any IPs are currently blocked
-4. **Test blocking**: Verify the nginx bouncer is working
-5. **Add custom scenarios**: Create rules specific to homelab needs
-
 ## Related Documentation
 - [Network Architecture](network-architecture.md) - nicesrv's role in the network
 - [Service Inventory](service-inventory.md) - All services across the homelab
